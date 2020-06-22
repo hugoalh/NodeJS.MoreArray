@@ -1,0 +1,25 @@
+{
+	"name": "@hugoalh/more-array",
+	"version": "1.0.0",
+	"description": "A library to provide more ways to handle array.",
+	"main": "main.js",
+	"scripts": {},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hugoalh/NodeJS.MoreArray.git"
+	},
+	"keywords": [
+		"nodejs",
+		"handle",
+		"array"
+	],
+	"author": "hugoalh",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/hugoalh/NodeJS.MoreArray/issues"
+	},
+	"homepage": "https://github.com/hugoalh/NodeJS.MoreArray#readme",
+	"dependencies": {
+		"@hugoalh/advanced-determine": "^1.1.0"
+	}
+}
