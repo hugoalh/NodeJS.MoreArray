@@ -34,11 +34,12 @@ A library to provide more ways to handle array.
 
 ### API
 
-|  | <div align="center"><b>Description</b></div> |
+|  | **Description** |
 |:----|:----|
 | `flat(item, maximumDepth?)` | ***maximumDepth {number = Infinity}:*** How depth the array need to flatten; `0` (also is the range minimum) does not flat the array.<br /><br />Return result. |
 | `merge(...items)` | **...items {array}:** Support infinity arrays.<br /><br />Return result. |
 | `outPlaceReverse(item)` | Have same function as `Array.reverse()`, but does not change the original array.<br /><br />Return result. |
+| `removeDuplicate(item)` | Remove duplicated element(s) in that array, but does not change the original array.<br /><br />Return result. |
 
 ### Example
 
@@ -55,5 +56,7 @@ console.log(array1);// ["three", "two", "one"]
 console.log(array2);// ["one", "two", "three"]
 console.log(moreArray.reverse(array2));// ["three", "two", "one"]
 console.log(array2);// ["one", "two", "three"]
-console.log(moreArray.merge(array1, array2));// ["three", "two", "one", "one", "two", "three"]
+const array3 = moreArray.merge(array1, array2);
+console.log(array3);// ["three", "two", "one", "one", "two", "three"]
+console.log(moreArray.removeDuplicate(array3));// ["three", "two", "one"]
 ```
