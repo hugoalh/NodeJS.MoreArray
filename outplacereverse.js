@@ -1,7 +1,5 @@
 /*==================
 [NodeJS] More Array - Out Place Reverse
-	Contributor:
-		hugoalh
 	Language:
 		NodeJS 14
 ==================*/

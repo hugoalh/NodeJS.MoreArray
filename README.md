@@ -1,61 +1,22 @@
-# <div align="center">[NodeJS] More Array</div>
+# [NodeJS] More Array
 
-<div align="center">
-  <code>hugoalh/NodeJS.MoreArray</code><br />
-  <img src="https://img.shields.io/github/languages/count/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github" />
-  <img src="https://img.shields.io/github/languages/top/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github" />
-  <img src="https://img.shields.io/github/repo-size/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github" />
-  <img src="https://img.shields.io/github/watchers/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github" />
-  <img src="https://img.shields.io/github/stars/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github" />
-  <img src="https://img.shields.io/github/forks/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github" />
-  <a href="https://lgtm.com/projects/g/hugoalh/NodeJS.MoreArray/alerts/"><img src="https://img.shields.io/lgtm/alerts/g/hugoalh/NodeJS.MoreArray.svg?style=flat-square&logo=lgtm&label=%20" /></a>
-  <a href="https://lgtm.com/projects/g/hugoalh/NodeJS.MoreArray/context:javascript"><img src="https://img.shields.io/lgtm/grade/javascript/g/hugoalh/NodeJS.MoreArray.svg?style=flat-square&logo=lgtm" /></a>
-</div>
+[`hugoalh/NodeJS.MoreArray`](https://github.com/hugoalh/NodeJS.MoreArray)
 
-<table align="right">
-  <tr>
-    <td align="center">
-      <b>Contributor</b><br />
-      <img src="https://img.shields.io/github/contributors/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20" />
-    </td>
-    <td><a href="https://github.com/hugoalh">hugoalh</a></td>
-  </tr>
-  <tr>
-    <td align="center"><b>License</b></td>
-    <td><a href="./LICENSE.md">MIT</a></td>
-  </tr>
-  <tr>
-    <td align="center"><b>Release</b></td>
-    <td>
-      <b>Stable: </b><img src="https://img.shields.io/github/release/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20" /> (<img src="https://img.shields.io/github/release-date/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20" />)<br />
-      <b>Latest: </b><img src="https://img.shields.io/github/release/hugoalh/NodeJS.MoreArray?include_prereleases&style=flat-square&color=000000&label=%20" /> (<img src="https://img.shields.io/github/release-date-pre/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20" />)
-    </td>
-  </tr>
-  <tr>
-    <td align="center">
-      <b>Download</b><br />
-      <img src="https://img.shields.io/github/downloads/hugoalh/NodeJS.MoreArray/total?style=flat-square&color=000000&label=%20" />
-    </td>
-    <td><ul>
-      <li><a href="https://github.com/hugoalh/NodeJS.MoreArray/releases">GitHub</a></li>
-      <li><a href="https://www.npmjs.com/package/@hugoalh/more-array">NPMJS</a></li>
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Issue</b></td>
-    <td>
-      <b>Open: </b><img src="https://img.shields.io/github/issues-raw/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20" /><br />
-      <b>Closed: </b><img src="https://img.shields.io/github/issues-closed-raw/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20" />
-    </td>
-  </tr>
-  <tr>
-    <td align="center"><b>Pull Request</b></td>
-    <td>
-      <b>Open: </b><img src="https://img.shields.io/github/issues-pr-raw/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20" /><br />
-      <b>Closed: </b><img src="https://img.shields.io/github/issues-pr-closed-raw/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20" />
-    </td>
-  </tr>
-</table>
+[![](https://img.shields.io/github/contributors/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)](https://github.com/hugoalh/NodeJS.MoreArray/graphs/contributors)
+[![](https://img.shields.io/github/license/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)](https://github.com/hugoalh/NodeJS.MoreArray/blob/master/LICENSE.md)
+![](https://img.shields.io/github/languages/count/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
+![](https://img.shields.io/github/languages/top/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
+![](https://img.shields.io/github/repo-size/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
+![](https://img.shields.io/github/languages/code-size/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
+![](https://img.shields.io/github/watchers/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
+![](https://img.shields.io/github/stars/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
+![](https://img.shields.io/github/forks/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
+[![](https://img.shields.io/lgtm/alerts/g/hugoalh/NodeJS.MoreArray.svg?style=flat-square&logo=lgtm&label=%20)](https://lgtm.com/projects/g/hugoalh/NodeJS.MoreArray/alerts)
+[![](https://img.shields.io/lgtm/grade/javascript/g/hugoalh/NodeJS.MoreArray.svg?style=flat-square&logo=lgtm)](https://lgtm.com/projects/g/hugoalh/NodeJS.MoreArray/context:javascript)
+
+| **[Release](https://github.com/hugoalh/NodeJS.MoreArray/releases)** ![](https://img.shields.io/github/downloads/hugoalh/NodeJS.MoreArray/total?style=flat-square&color=000000&label=%20) | **Outside Download**  | **[Issue](https://github.com/hugoalh/NodeJS.MoreArray/issues?q=is%3Aissue)** | **[Pull Request](https://github.com/hugoalh/NodeJS.MoreArray/pulls?q=is%3Apr)** |
+|:----|:----|:----|:----|
+| **Stable:** ![](https://img.shields.io/github/release/hugoalh/NodeJS.MoreArray?sort=semver&style=flat-square&color=000000&label=%20) (![](https://img.shields.io/github/release-date/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20))<br />**Latest:** ![](https://img.shields.io/github/release/hugoalh/NodeJS.MoreArray?include_prereleases&sort=semver&style=flat-square&color=000000&label=%20) (![](https://img.shields.io/github/release-date-pre/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20)) | [NPMJS](https://www.npmjs.com/package/@hugoalh/more-array) | **Open:** ![](https://img.shields.io/github/issues-raw/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20)<br />**Closed:** ![](https://img.shields.io/github/issues-closed-raw/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20) | **Open:** ![](https://img.shields.io/github/issues-pr-raw/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20)<br />**Closed:** ![](https://img.shields.io/github/issues-pr-closed-raw/hugoalh/NodeJS.MoreArray?style=flat-square&color=000000&label=%20) |
 
 ## 📜 Description
 
@@ -73,11 +34,12 @@ A library to provide more ways to handle array.
 
 ### API
 
-|  | <div align="center"><b>Description</b></div> |
+|  | **Description** |
 |:----|:----|
-| `flat(item, maximumDepth)` | **maximumDepth {optional: number = Infinity}:** How depth the array need to flatten; `0` (also is the range minimum) does not flat the array.<br /><br />Return result. |
+| `flat(item, maximumDepth?)` | ***maximumDepth {number = Infinity}:*** How depth the array need to flatten; `0` (also is the range minimum) does not flat the array.<br /><br />Return result. |
 | `merge(...items)` | **...items {array}:** Support infinity arrays.<br /><br />Return result. |
 | `outPlaceReverse(item)` | Have same function as `Array.reverse()`, but does not change the original array.<br /><br />Return result. |
+| `removeDuplicate(item)` | Remove duplicated element(s) in that array, but does not change the original array.<br /><br />Return result. |
 
 ### Example
 
@@ -94,9 +56,7 @@ console.log(array1);// ["three", "two", "one"]
 console.log(array2);// ["one", "two", "three"]
 console.log(moreArray.reverse(array2));// ["three", "two", "one"]
 console.log(array2);// ["one", "two", "three"]
-console.log(moreArray.merge(array1, array2));// ["three", "two", "one", "one", "two", "three"]
+const array3 = moreArray.merge(array1, array2);
+console.log(array3);// ["three", "two", "one", "one", "two", "three"]
+console.log(moreArray.removeDuplicate(array3));// ["three", "two", "one"]
 ```
-
-## 🐛 Issue
-
-Found any issue in this project? Submit the issue via [GitHub](https://github.com/hugoalh/NodeJS.MoreArray/issues).

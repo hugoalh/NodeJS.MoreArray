@@ -1,7 +1,5 @@
 /*==================
 [NodeJS] More Array - Flat
-	Contributor:
-		hugoalh
 	Language:
 		NodeJS 14
 ==================*/
@@ -23,8 +21,12 @@ function flatInternal(item, maximumDepth, currentDepth = 0) {
 	return item;
 };
 function flat(item, maximumDepth = Infinity) {
-	if (determine.isArray(item) == false) {
+	const itemIsArray = determine.isArray(item);
+	if (itemIsArray == false) {
 		throw new TypeError(`Invalid type of "item"! Require type of array.`);
+	};
+	if (itemIsArray == null) {
+		return item;
 	};
 	if (determine.isNumber(maximumDepth) == false) {
 		throw new TypeError(`Invalid type of "maximumDepth"! Require type of number.`);

@@ -1,7 +1,5 @@
 /*==================
 [NodeJS] More Array - Merge
-	Contributor:
-		hugoalh
 	Language:
 		NodeJS 14
 ==================*/
