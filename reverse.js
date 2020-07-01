@@ -1,17 +1,17 @@
 /*==================
-[NodeJS] More Array - Out Place Reverse
+[NodeJS] More Array - Reverse
 	Language:
 		NodeJS 14
 ==================*/
 const determine = require("@hugoalh/advanced-determine");
-function outPlaceReverseSmallData(item) {
+function reverseSmallData(item) {
 	let result = [];
 	item.forEach((element, index) => {
 		result[(item.length - 1) - index] = element;
 	});
 	return result;
 };
-function outPlaceReverseBigData(item) {
+function reverseBigData(item) {
 	let resultJSON = {};
 	Promise.allSettled(
 		item.map((element, index) => {
@@ -23,7 +23,7 @@ function outPlaceReverseBigData(item) {
 	const resultArray = Object.values(resultJSON);
 	return resultArray;
 };
-function outPlaceReverse(item) {
+function reverse(item) {
 	if (determine.isArray(item) == false) {
 		throw new TypeError(`Invalid type of "item"! Require type of array.`);
 	};
@@ -31,8 +31,8 @@ function outPlaceReverse(item) {
 		return item;
 	};
 	if (item.length <= 16) {
-		return outPlaceReverseSmallData(item);
+		return reverseSmallData(item);
 	};
-	return outPlaceReverseBigData(item);
+	return reverseBigData(item);
 };
-module.exports = outPlaceReverse;
+module.exports = reverse;
