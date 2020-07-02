@@ -4,14 +4,13 @@
 		NodeJS 14
 ==================*/
 const determine = require("@hugoalh/advanced-determine");
-function reverseSmallData(item) {
-	let result = [];
-	item.forEach((element, index) => {
-		result[(item.length - 1) - index] = element;
-	});
-	return result;
-};
-function reverseBigData(item) {
+function reverse(item) {
+	if (determine.isArray(item) == false) {
+		throw new TypeError(`Invalid type of "item"! Require type of array.`);
+	};
+	if (item.length <= 1) {
+		return item;
+	};
 	let resultJSON = {};
 	Promise.allSettled(
 		item.map((element, index) => {
@@ -22,17 +21,5 @@ function reverseBigData(item) {
 	);
 	const resultArray = Object.values(resultJSON);
 	return resultArray;
-};
-function reverse(item) {
-	if (determine.isArray(item) == false) {
-		throw new TypeError(`Invalid type of "item"! Require type of array.`);
-	};
-	if (item.length <= 1) {
-		return item;
-	};
-	if (item.length <= 16) {
-		return reverseSmallData(item);
-	};
-	return reverseBigData(item);
 };
 module.exports = reverse;
