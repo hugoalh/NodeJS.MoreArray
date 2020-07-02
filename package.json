@@ -20,6 +20,6 @@
 	},
 	"homepage": "https://github.com/hugoalh/NodeJS.MoreArray#readme",
 	"dependencies": {
-		"@hugoalh/advanced-determine": "^1.2.1"
+		"@hugoalh/advanced-determine": "^1.2.2"
 	}
 }
