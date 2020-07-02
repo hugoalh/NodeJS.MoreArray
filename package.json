@@ -3,7 +3,6 @@
 	"version": "1.0.2",
 	"description": "A library to provide more ways to handle array.",
 	"main": "main.js",
-	"scripts": {},
 	"repository": {
 		"type": "git",
 		"url": "git+https://github.com/hugoalh/NodeJS.MoreArray.git"
