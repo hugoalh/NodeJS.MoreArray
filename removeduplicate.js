@@ -3,13 +3,12 @@
 	Language:
 		NodeJS 14
 ==================*/
-const determine = require("@hugoalh/advanced-determine");
+const advancedDetermine = require("@hugoalh/advanced-determine");
 function removeDuplicate(item) {
-	const itemIsArray = determine.isArray(item);
-	if (itemIsArray == false) {
+	if (advancedDetermine.isArray(item) == false) {
 		throw new TypeError(`Invalid type of "item"! Require type of array.`);
 	};
-	if (itemIsArray == null || item.length <= 1) {
+	if (item.length <= 1) {
 		return item;
 	};
 	let queue = item;

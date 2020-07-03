@@ -3,13 +3,13 @@
 	Language:
 		NodeJS 14
 ==================*/
-const determine = require("@hugoalh/advanced-determine");
+const advancedDetermine = require("@hugoalh/advanced-determine");
 function merge(...items) {
 	if (items.length == 0) {
 		throw new Error(`No input!`);
 	};
 	items.forEach((item, index) => {
-		if (determine.isArray(item) == false) {
+		if (advancedDetermine.isArray(item) == false) {
 			throw new TypeError(`Invalid type of "item[${index}]"! Require type of array.`);
 		};
 	});
