@@ -5,20 +5,20 @@
 ==================*/
 const determine = require("@hugoalh/advanced-determine");
 function flatInternal(item, maximumDepth, currentDepth = 0) {
-	if (currentDepth < maximumDepth) {
-		let result = [];
-		for (let index = 0; index < item.length; index++) {
-			if (determine.isArray(item[index]) == true) {
-				result.push(
-					...flatInternal(item[index], maximumDepth, currentDepth + 1)
-				);
-			} else {
-				result.push(item[index]);
-			};
-		};
-		return result;
+	if (currentDepth >= maximumDepth) {
+		return item;
 	};
-	return item;
+	let result = [];
+	for (let index = 0; index < item.length; index++) {
+		if (determine.isArray(item[index]) == true) {
+			result.push(
+				...flatInternal(item[index], maximumDepth, currentDepth + 1)
+			);
+		} else {
+			result.push(item[index]);
+		};
+	};
+	return result;
 };
 function flat(item, maximumDepth = Infinity) {
 	const itemIsArray = determine.isArray(item);
