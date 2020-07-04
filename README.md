@@ -48,7 +48,7 @@ const moreArray = require("@hugoalh/more-array");
 const array1 = ["one", "two", "three"];
 const array2 = ["one", "two", "three"];
 
-console.log(moreArray.version);// 1.0.0
+console.log(moreArray.version);// "1.0.4"
 
 console.log(array1);// ["one", "two", "three"]
 console.log(Array.reverse(array1));// ["three", "two", "one"]
