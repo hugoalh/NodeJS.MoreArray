@@ -36,7 +36,7 @@ A library to provide more ways to handle array.
 
 |  | **Description** |
 |:----|:----|
-| `flat(item, maximumDepth?)` | ***maximumDepth {number.positiveinteger = Infinity}:*** How depth the array need to flatten; `0` does not flat the array.<br /><br />Return result. |
+| `flat(item, maximumDepth?)` | ***maximumDepth {number.positiveInteger = Infinity}:*** How depth the array need to flatten; `0` does not flat the array.<br /><br />Return result. |
 | `merge(...items)` | **...items {array}:** Support infinity arrays.<br /><br />Return result. |
 | `reverse(item)` | Have same function as `Array.reverse()`, but does not change the original array.<br /><br />Return result. |
 | `removeDuplicate(item)` | Remove duplicated element(s) in that array, but does not change the original array.<br /><br />Return result. |
