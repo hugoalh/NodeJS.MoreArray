@@ -28,7 +28,7 @@ function flat(item, maximumDepth = Infinity) {
 	if (itemIsArray == null) {
 		return item;
 	};
-	if (maximumDepth != Infinity || advancedDetermine.isNumberPositiveInteger(maximumDepth) == false) {
+	if (maximumDepth !== Infinity && advancedDetermine.isNumberPositiveInteger(maximumDepth) == false) {
 		throw new TypeError(`Invalid type of "maximumDepth"! Require type of positive integer number.`);
 	};
 	return flatInternal(item, maximumDepth);
