@@ -20,6 +20,12 @@ function flatInternal(item, maximumDepth, currentDepth = 0) {
 	};
 	return result;
 };
+/**
+ * @function
+ * @param {array} item
+ * @param {number} [maximumDepth = Infinity]
+ * @returns {array}
+ */
 function flat(item, maximumDepth = Infinity) {
 	const itemIsArray = advancedDetermine.isArray(item);
 	if (itemIsArray == false) {

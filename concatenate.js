@@ -1,10 +1,15 @@
 /*==================
-[NodeJS] More Array - Merge
+[NodeJS] More Array - Concatenate
 	Language:
 		NodeJS 14
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
-function merge(...items) {
+/**
+ * @function
+ * @param {...array} items
+ * @returns {array}
+ */
+function concatenate(...items) {
 	if (items.length == 0) {
 		throw new Error(`No input!`);
 	};
@@ -20,4 +25,4 @@ function merge(...items) {
 	const result = pool.concat(...items);
 	return result;
 };
-module.exports = merge;
+module.exports = concatenate;
