@@ -8,6 +8,7 @@ const config = require("./config.js");
 const removeDuplicate = require("./removeduplicate.js");
 module.exports.concat = concatenate;
 module.exports.concatenate = concatenate;
+module.exports.config.ignoreError = config.ignoreError;
 module.exports.flat = require("./flat.js");
 module.exports.merge = concatenate;
 module.exports.removeDuplicate = removeDuplicate;
