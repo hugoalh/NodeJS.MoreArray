@@ -4,6 +4,7 @@
 		NodeJS 14
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
+const config = require("./config.js");
 /**
  * @function
  * @param {array} item
@@ -11,6 +12,9 @@ const advancedDetermine = require("@hugoalh/advanced-determine");
  */
 function removeDuplicate(item) {
 	if (advancedDetermine.isArray(item) == false) {
+		if (config.ignoreError() == true) {
+			return undefined;
+		};
 		throw new TypeError(`Invalid type of "item"! Require type of array.`);
 	};
 	if (item.length <= 1) {

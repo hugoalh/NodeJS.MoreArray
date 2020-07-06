@@ -4,6 +4,7 @@
 		NodeJS 14
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
+const config = require("./config.js");
 function flatInternal(item, maximumDepth, currentDepth = 0) {
 	if (currentDepth >= maximumDepth) {
 		return item;
@@ -29,12 +30,18 @@ function flatInternal(item, maximumDepth, currentDepth = 0) {
 function flat(item, maximumDepth = Infinity) {
 	const itemIsArray = advancedDetermine.isArray(item);
 	if (itemIsArray == false) {
+		if (config.ignoreError() == true) {
+			return undefined;
+		};
 		throw new TypeError(`Invalid type of "item"! Require type of array.`);
 	};
 	if (itemIsArray == null) {
 		return item;
 	};
 	if (maximumDepth !== Infinity && advancedDetermine.isNumberPositiveInteger(maximumDepth) == false) {
+		if (config.ignoreError() == true) {
+			return undefined;
+		};
 		throw new TypeError(`Invalid type of "maximumDepth"! Require type of positive integer number.`);
 	};
 	return flatInternal(item, maximumDepth);

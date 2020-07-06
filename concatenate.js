@@ -4,6 +4,7 @@
 		NodeJS 14
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
+const config = require("./config.js");
 /**
  * @function
  * @param {...array} items
@@ -11,10 +12,16 @@ const advancedDetermine = require("@hugoalh/advanced-determine");
  */
 function concatenate(...items) {
 	if (items.length == 0) {
+		if (config.ignoreError() == true) {
+			return undefined;
+		};
 		throw new Error(`No input!`);
 	};
 	items.forEach((item, index) => {
 		if (advancedDetermine.isArray(item) == false) {
+			if (config.ignoreError() == true) {
+				return undefined;
+			};
 			throw new TypeError(`Invalid type of "item[${index}]"! Require type of array.`);
 		};
 	});
