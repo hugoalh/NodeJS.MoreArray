@@ -25,7 +25,7 @@ function flatInternal(item, maximumDepth, currentDepth = 0) {
  * @function flat
  * @alias flatten
  * @description Cause all sub-array elements concatenated into it recursively up to the specified depth.
- * @param {array} item Array that need to flaten.
+ * @param {array} item Array that need to flatten.
  * @param {number} [maximumDepth = Infinity] The maximum depth level specifying how deep a nested array structure should be flatten.
  * @returns {array} A flattened array.
  */

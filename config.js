@@ -14,7 +14,7 @@ let ignoreErrorValue = false;
 /**
  * @function ignoreError
  * @description Globally ignore errors to prevent script stop executing.
- * @param {boolean} [mode] Enable / Disable.
+ * @param {(boolean|undefined)} [mode] Enable or disable this feature; Query current value.
  * @returns {(boolean|undefined)}
  */
 function ignoreError(mode) {
