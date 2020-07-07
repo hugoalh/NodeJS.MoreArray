@@ -4,18 +4,16 @@
 		NodeJS 14
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
-const config = require("./config.js");
+const internalService = require("./internalservice.js");
 /**
- * @function
- * @param {array} item
- * @returns {object}
+ * @function toJSON
+ * @description Convert an array to JSON.
+ * @param {array} item Array that need to convert to JSON.
+ * @returns {object} A JSON with number-index key.
  */
 function toJSON(item) {
 	if (advancedDetermine.isArray(item) == false) {
-		if (config.ignoreError() == true) {
-			return undefined;
-		};
-		throw new TypeError(`Invalid type of "item"! Require type of array.`);
+		return internalService.customTypeError(`Invalid type of "item"! Require type of array.`);
 	};
 	let result = {};
 	item.forEach((value, index) => {

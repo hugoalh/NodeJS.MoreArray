@@ -4,18 +4,18 @@
 		NodeJS 14
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
-const config = require("./config.js");
+const internalService = require("./internalservice.js");
 /**
- * @function
- * @param {array} item
- * @returns {array}
+ * @function removeDuplicate
+ * @alias uniq
+ * @alias unique
+ * @description Remove all of the duplicated elements in the array.
+ * @param {array} item Array that need to remove duplicated elements.
+ * @returns {array} An array with unique elements.
  */
 function removeDuplicate(item) {
 	if (advancedDetermine.isArray(item) == false) {
-		if (config.ignoreError() == true) {
-			return undefined;
-		};
-		throw new TypeError(`Invalid type of "item"! Require type of array.`);
+		return internalService.customTypeError(`Invalid type of "item"! Require type of array.`);
 	};
 	if (item.length <= 1) {
 		return item;

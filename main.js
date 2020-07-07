@@ -5,11 +5,13 @@
 ==================*/
 const concatenate = require("./concatenate.js");
 const config = require("./config.js");
+const flat = require("./flat.js");
 const removeDuplicate = require("./removeduplicate.js");
 module.exports.concat = concatenate;
 module.exports.concatenate = concatenate;
 module.exports.config.ignoreError = config.ignoreError;
-module.exports.flat = require("./flat.js");
+module.exports.flat = flat;
+module.exports.flatten = flat;
 module.exports.merge = concatenate;
 module.exports.removeDuplicate = removeDuplicate;
 module.exports.reverse = require("./reverse.js");

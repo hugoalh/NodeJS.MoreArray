@@ -4,25 +4,22 @@
 		NodeJS 14
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
-const config = require("./config.js");
+const internalService = require("./internalservice.js");
 /**
- * @function
- * @param {...array} items
- * @returns {array}
+ * @function concatenate
+ * @alias concat
+ * @alias merge
+ * @description Concatenate 2 or more arrays into one array.
+ * @param {...array} items Arrays that need to concatenate into one array.
+ * @returns {array} A concatenated array.
  */
 function concatenate(...items) {
 	if (items.length == 0) {
-		if (config.ignoreError() == true) {
-			return undefined;
-		};
-		throw new Error(`No input!`);
+		return internalService.customError(`No input!`);
 	};
 	items.forEach((item, index) => {
 		if (advancedDetermine.isArray(item) == false) {
-			if (config.ignoreError() == true) {
-				return undefined;
-			};
-			throw new TypeError(`Invalid type of "item[${index}]"! Require type of array.`);
+			return internalService.customTypeError(`Invalid type of "item[${index}]"! Require type of array.`);
 		};
 	});
 	if (items.length == 1) {

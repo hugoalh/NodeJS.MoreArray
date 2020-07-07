@@ -12,16 +12,17 @@ const version = "1.0.5";
  */
 let ignoreErrorValue = false;
 /**
- * @function
- * @param {boolean} [mode]
+ * @function ignoreError
+ * @description Globally ignore errors to prevent script stop executing.
+ * @param {boolean} [mode] Enable / Disable.
  * @returns {(boolean|undefined)}
  */
 function ignoreError(mode) {
 	if (typeof mode == "boolean") {
 		ignoreErrorValue = mode;
-		return undefined;
+	} else {
+		return ignoreErrorValue;
 	};
-	return ignoreErrorValue;
-}
+};
 module.exports.version = version;
 module.exports.ignoreError = ignoreError;

@@ -4,18 +4,16 @@
 		NodeJS 14
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
-const config = require("./config.js");
+const internalService = require("./internalservice.js");
 /**
- * @function
- * @param {array} item
- * @returns {array}
+ * @function reverse
+ * @description Reverse an array out place.
+ * @param {array} item Array that need to reverse.
+ * @returns {array} A reversed array.
  */
 function reverse(item) {
 	if (advancedDetermine.isArray(item) == false) {
-		if (config.ignoreError() == true) {
-			return undefined;
-		};
-		throw new TypeError(`Invalid type of "item"! Require type of array.`);
+		return internalService.customTypeError(`Invalid type of "item"! Require type of array.`);
 	};
 	if (item.length <= 1) {
 		return item;
