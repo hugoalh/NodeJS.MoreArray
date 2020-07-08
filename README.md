@@ -22,31 +22,31 @@
 
 A module/library to provide more ways to handle array.
 
-## 💽 Installation
+[Click here to view the official documentation online.](https://github.com/hugoalh/NodeJS.MoreArray/wiki)
 
-- NodeJS 8+
-- NPMJS 6+
-  ```powershell
-  > npm install @hugoalh/more-array
-  ```
+## 📄 Documentation (Excerpt)
 
-## ✍ Guide
+### Getting Started
+
+NodeJS (v8+) & NPMJS (v6+):
+
+```powershell
+> npm install @hugoalh/more-array
+```
 
 ### API
 
-|  | **Description** |
-|:----|:----|
-| `flat(item, maximumDepth?)` | ***maximumDepth {number.positiveInteger = Infinity}:*** How depth the array need to flatten; `0` does not flat the array.<br /><br />Return result. |
-| `merge(...items)` | **...items {array}:** Support infinity arrays.<br /><br />Return result. |
-| `reverse(item)` | Have same function as `Array.reverse()`, but does not change the original array.<br /><br />Return result. |
-| `removeDuplicate(item)` | Remove duplicated element(s) in that array, but does not change the original array.<br /><br />Return result. |
+- `concatenate(...items)`
+- `flat(item, maximumDepth?)`
+- `removeDuplicate(item)`
+- `reverse(item)`
 
 ### Example
 
 ```javascript
 const moreArray = require("@hugoalh/more-array");
-const array1 = ["one", "two", "three"];
-const array2 = ["one", "two", "three"];
+let array1 = ["one", "two", "three"];
+let array2 = ["one", "two", "three"];
 
 console.log(moreArray.version);// "1.0.4"
 
@@ -56,7 +56,7 @@ console.log(array1);// ["three", "two", "one"]
 console.log(array2);// ["one", "two", "three"]
 console.log(moreArray.reverse(array2));// ["three", "two", "one"]
 console.log(array2);// ["one", "two", "three"]
-const array3 = moreArray.merge(array1, array2);
+let array3 = moreArray.concatenate(array1, array2);
 console.log(array3);// ["three", "two", "one", "one", "two", "three"]
 console.log(moreArray.removeDuplicate(array3));// ["three", "two", "one"]
 ```
