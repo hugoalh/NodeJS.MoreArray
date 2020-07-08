@@ -1,4 +1,4 @@
-# [NodeJS] More Array
+# \[NodeJS\] More Array
 
 [`hugoalh/NodeJS.MoreArray`](https://github.com/hugoalh/NodeJS.MoreArray)
 
