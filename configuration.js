@@ -3,6 +3,7 @@
 	Language:
 		NodeJS 14
 ==================*/
+const internalService = require("./internalservice.js");
 /**
  * @var {boolean} ignoreGeneralErrorValue
  */
@@ -79,7 +80,7 @@ function ignoreTypeError(mode) {
  */
 function ignoreAllError(mode) {
 	if (typeof mode != "boolean") {
-		
+		return internalService.typeError(`Invalid type of "mode"! Require type of boolean.`);
 	};
 	ignoreGeneralError(mode);
 	ignoreRangeError(mode);
