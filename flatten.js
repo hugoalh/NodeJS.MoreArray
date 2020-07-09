@@ -32,13 +32,13 @@ function flatInternal(item, maximumDepth, currentDepth = 0) {
 function flat(item, maximumDepth = Infinity) {
 	const itemIsArray = advancedDetermine.isArray(item);
 	if (itemIsArray == false) {
-		return internalService.customTypeError(`Invalid type of "item"! Require type of array.`);
+		return internalService.typeError(`Invalid type of "item"! Require type of array.`);
 	};
 	if (itemIsArray == null) {
 		return item;
 	};
 	if (maximumDepth !== Infinity && advancedDetermine.isNumberPositiveInteger(maximumDepth) == false) {
-		return internalService.customTypeError(`Invalid type of "maximumDepth"! Require type of positive integer number.`);
+		return internalService.typeError(`Invalid type of "maximumDepth"! Require type of positive integer number.`);
 	};
 	return flatInternal(item, maximumDepth);
 };

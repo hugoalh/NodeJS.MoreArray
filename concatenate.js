@@ -15,11 +15,11 @@ const internalService = require("./internalservice.js");
  */
 function concatenate(...items) {
 	if (items.length == 0) {
-		return internalService.customError(`No input!`);
+		return internalService.generalError(`No input!`);
 	};
 	items.forEach((item, index) => {
 		if (advancedDetermine.isArray(item) == false) {
-			return internalService.customTypeError(`Invalid type of "item[${index}]"! Require type of array.`);
+			return internalService.typeError(`Invalid type of "item[${index}]"! Require type of array.`);
 		};
 	});
 	if (items.length == 1) {

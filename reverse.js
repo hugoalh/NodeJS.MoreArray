@@ -13,7 +13,7 @@ const internalService = require("./internalservice.js");
  */
 function reverse(item) {
 	if (advancedDetermine.isArray(item) == false) {
-		return internalService.customTypeError(`Invalid type of "item"! Require type of array.`);
+		return internalService.typeError(`Invalid type of "item"! Require type of array.`);
 	};
 	if (item.length <= 1) {
 		return item;
