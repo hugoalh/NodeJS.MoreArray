@@ -26,4 +26,5 @@ module.exports.toJSON = require("./tojson.js");
 module.exports.uniq = removeDuplicate;
 module.exports.unique = removeDuplicate;
 module.exports.v = version;
+module.exports.ver = version;
 module.exports.version = version;
