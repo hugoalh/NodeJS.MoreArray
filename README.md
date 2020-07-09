@@ -37,7 +37,7 @@ NodeJS (v8+) & NPMJS (v6+):
 ### API
 
 - `concatenate(...items)`
-- `flat(item, maximumDepth?)`
+- `flatten(item, maximumDepth?)`
 - `removeDuplicate(item)`
 - `reverse(item)`
 
