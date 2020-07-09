@@ -73,12 +73,12 @@ function ignoreTypeError(mode) {
 	};
 };
 /**
- * @function ignoreAllError
+ * @function ignoreAllErrors
  * @description Globally ignore all of the errors to prevent script stop executing.
  * @param {boolean} mode Enable or disable this feature.
  * @returns {undefined}
  */
-function ignoreAllError(mode) {
+function ignoreAllErrors(mode) {
 	if (typeof mode != "boolean") {
 		return internalService.typeError(`Invalid type of "mode"! Require type of boolean.`);
 	};
@@ -87,7 +87,7 @@ function ignoreAllError(mode) {
 	ignoreReferenceError(mode);
 	ignoreTypeError(mode);
 };
-module.exports.ignoreAllError = ignoreAllError;
+module.exports.ignoreAllErrors = ignoreAllErrors;
 module.exports.ignoreGeneralError = ignoreGeneralError;
 module.exports.ignoreRangeError = ignoreRangeError;
 module.exports.ignoreReferenceError = ignoreReferenceError;
