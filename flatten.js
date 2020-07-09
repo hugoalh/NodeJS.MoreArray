@@ -1,5 +1,5 @@
 /*==================
-[NodeJS] More Array - Flat
+[NodeJS] More Array - Flatten
 	Language:
 		NodeJS 14
 ==================*/
@@ -22,14 +22,14 @@ function flatInternal(item, maximumDepth, currentDepth = 0) {
 	return result;
 };
 /**
- * @function flat
- * @alias flatten
+ * @function flatten
+ * @alias flat
  * @description Cause all sub-array elements concatenated into it recursively up to the specified depth.
  * @param {array} item Array that need to flatten.
  * @param {number} [maximumDepth = Infinity] The maximum depth level specifying how deep a nested array structure should be flatten.
  * @returns {array} A flattened array.
  */
-function flat(item, maximumDepth = Infinity) {
+function flatten(item, maximumDepth = Infinity) {
 	const itemIsArray = advancedDetermine.isArray(item);
 	if (itemIsArray == false) {
 		return internalService.typeError(`Invalid type of "item"! Require type of array.`);
@@ -42,4 +42,4 @@ function flat(item, maximumDepth = Infinity) {
 	};
 	return flatInternal(item, maximumDepth);
 };
-module.exports = flat;
+module.exports = flatten;
