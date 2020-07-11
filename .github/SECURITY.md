@@ -9,7 +9,7 @@
 
 ### Buggy
 
-Version which listed in here were confirmed contains bug(s), and forever not supported (even if listed as a supported version above).
+Version(s) that listed in here were confirmed contains bug(s), and forever not supported (even if listed as a supported version).
 
 - v1.0.3
 - v1.0.2
@@ -18,7 +18,7 @@ Version which listed in here were confirmed contains bug(s), and forever not sup
 
 ### Contact
 
-Send an email to anyone who listed here (click the link to obtain the email address).
+Send an email to anyone who listed in here (click the link to obtain the email address).
 
 - [hugoalh](https://github.com/hugoalh)
 
