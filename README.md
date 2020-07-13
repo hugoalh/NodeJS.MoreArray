@@ -11,6 +11,7 @@
 ![](https://img.shields.io/github/watchers/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
 ![](https://img.shields.io/github/stars/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
 ![](https://img.shields.io/github/forks/hugoalh/NodeJS.MoreArray?style=flat-square&logo=github)
+[![](https://www.codefactor.io/repository/github/hugoalh/nodejs.morearray/badge)](https://www.codefactor.io/repository/github/hugoalh/nodejs.morearray)
 [![](https://img.shields.io/lgtm/alerts/g/hugoalh/NodeJS.MoreArray.svg?style=flat-square&logo=lgtm&label=%20)](https://lgtm.com/projects/g/hugoalh/NodeJS.MoreArray/alerts)
 [![](https://img.shields.io/lgtm/grade/javascript/g/hugoalh/NodeJS.MoreArray.svg?style=flat-square&logo=lgtm)](https://lgtm.com/projects/g/hugoalh/NodeJS.MoreArray/context:javascript)
 
