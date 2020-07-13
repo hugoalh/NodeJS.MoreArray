@@ -28,7 +28,7 @@ A module/library to provide more ways to handle array.
 
 ### Getting Started
 
-NodeJS (v8+) & NPMJS (v6+):
+NodeJS (v8+) & NPM (v6+):
 
 ```powershell
 > npm install @hugoalh/more-array
