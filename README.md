@@ -41,6 +41,7 @@ NodeJS (v8+) & NPM (v6+):
 - `flatten(item, maximumDepth?)`
 - `removeDuplicate(item)`
 - `reverse(item)`
+- `toJSON(item)`
 
 ### Example
 
@@ -48,8 +49,6 @@ NodeJS (v8+) & NPM (v6+):
 const moreArray = require("@hugoalh/more-array");
 let array1 = ["one", "two", "three"];
 let array2 = ["one", "two", "three"];
-
-console.log(moreArray.version);// "1.0.4"
 
 console.log(array1);// ["one", "two", "three"]
 console.log(Array.reverse(array1));// ["three", "two", "one"]
