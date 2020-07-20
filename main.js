@@ -6,7 +6,7 @@
 /**
  * @const {string} version
  */
-const version = "1.0.7";
+const version = "1.0.8";
 
 const concatenate = require("./concatenate.js");
 const configuration = require("./configuration.js");
