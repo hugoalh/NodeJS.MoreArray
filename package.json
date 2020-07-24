@@ -2,23 +2,28 @@
 	"name": "@hugoalh/more-array",
 	"version": "1.0.8",
 	"description": "A module/library to provide more ways to handle array.",
-	"main": "main.js",
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/hugoalh/NodeJS.MoreArray.git"
-	},
 	"keywords": [
 		"nodejs",
 		"handle",
 		"array"
 	],
-	"author": "hugoalh",
-	"license": "MIT",
+	"homepage": "https://github.com/hugoalh/NodeJS.MoreArray#readme",
 	"bugs": {
 		"url": "https://github.com/hugoalh/NodeJS.MoreArray/issues"
 	},
-	"homepage": "https://github.com/hugoalh/NodeJS.MoreArray#readme",
+	"license": "MIT",
+	"author": "hugoalh",
+	"main": "main.js",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/hugoalh/NodeJS.MoreArray.git"
+	},
 	"dependencies": {
 		"@hugoalh/advanced-determine": "^3.0.0"
-	}
+	},
+	"engines": {
+		"node": ">= 10.0.0",
+		"npm": ">= 6.0.0"
+	},
+	"private": false
 }
