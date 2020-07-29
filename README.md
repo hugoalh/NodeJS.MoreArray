@@ -47,9 +47,9 @@ NodeJS (v10+) & NPM (v6+):
 
 ```javascript
 const moreArray = require("@hugoalh/more-array");
+
 let array1 = ["one", "two", "three"];
 let array2 = ["one", "two", "three"];
-
 console.log(array1);// ["one", "two", "three"]
 console.log(Array.reverse(array1));// ["three", "two", "one"]
 console.log(array1);// ["three", "two", "one"]
