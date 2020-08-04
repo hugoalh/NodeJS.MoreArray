@@ -41,7 +41,7 @@ NodeJS (v10+) & NPM (v6+):
 - `flatten(item, maximumDepth?)`
 - `removeDuplicate(item)`
 - `reverse(item)`
-- `toJSON(item)`
+- `toObject(item)`
 
 ### Example
 

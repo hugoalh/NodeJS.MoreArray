@@ -10,8 +10,8 @@ const internalService = require("./internalservice.js");
  * @alias concat
  * @alias merge
  * @description Concatenate 2 or more arrays into one array.
- * @param {...array} items Arrays that need to concatenate into one array.
- * @returns {array} A concatenated array.
+ * @param {...*[]} items Arrays that need to concatenate into one array.
+ * @returns {*[]} A concatenated array.
  */
 function concatenate(...items) {
 	if (items.length == 0) {

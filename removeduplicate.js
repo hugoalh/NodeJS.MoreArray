@@ -10,8 +10,8 @@ const internalService = require("./internalservice.js");
  * @alias uniq
  * @alias unique
  * @description Remove all of the duplicated elements in the array.
- * @param {array} item Array that need to remove duplicated elements.
- * @returns {array} An array with unique elements.
+ * @param {*[]} item Array that need to remove duplicated elements.
+ * @returns {*[]} An array with unique elements.
  */
 function removeDuplicate(item) {
 	if (advancedDetermine.isArray(item) == false) {

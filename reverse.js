@@ -8,8 +8,8 @@ const internalService = require("./internalservice.js");
 /**
  * @function reverse
  * @description Reverse an array out place.
- * @param {array} item Array that need to reverse.
- * @returns {array} A reversed array.
+ * @param {*[]} item Array that need to reverse.
+ * @returns {*[]} A reversed array.
  */
 function reverse(item) {
 	if (advancedDetermine.isArray(item) == false) {
