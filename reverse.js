@@ -21,12 +21,11 @@ function reverse(item) {
 	let resultJSON = {};
 	Promise.allSettled(
 		item.map((element, index) => {
-			new Promise((resolve, reject) => {
+			new Promise(() => {
 				resultJSON[(item.length - 1) - index] = element;
-			}).catch((error) => { });
+			}).catch();
 		})
 	);
-	const resultArray = Object.values(resultJSON);
-	return resultArray;
+	return Object.values(resultJSON);
 };
 module.exports = reverse;

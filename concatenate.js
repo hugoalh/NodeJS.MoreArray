@@ -26,7 +26,6 @@ function concatenate(...items) {
 		return items[0];
 	};
 	let pool = [];
-	const result = pool.concat(...items);
-	return result;
+	return pool.concat(...items);
 };
 module.exports = concatenate;
