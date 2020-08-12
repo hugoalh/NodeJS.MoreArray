@@ -15,7 +15,7 @@ const internalService = require("./internalservice.js");
  */
 function removeDuplicate(item) {
 	if (advancedDetermine.isArray(item) == false) {
-		return internalService.typeError(`Invalid type of "item"! Require type of array.`);
+		return internalService.prefabTypeError("item", "array");
 	};
 	if (item.length <= 1) {
 		return item;

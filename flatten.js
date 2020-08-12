@@ -5,6 +5,14 @@
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
 const internalService = require("./internalservice.js");
+/**
+ * @private
+ * @function flatInternal
+ * @param {*[]} item
+ * @param {number} maximumDepth
+ * @param {number} currentDepth
+ * @returns {*[]}
+ */
 function flatInternal(item, maximumDepth, currentDepth = 0) {
 	if (currentDepth >= maximumDepth) {
 		return item;
@@ -32,13 +40,13 @@ function flatInternal(item, maximumDepth, currentDepth = 0) {
 function flatten(item, maximumDepth = Infinity) {
 	const itemIsArray = advancedDetermine.isArray(item);
 	if (itemIsArray == false) {
-		return internalService.typeError(`Invalid type of "item"! Require type of array.`);
+		return internalService.prefabTypeError("item", "array");
 	};
 	if (itemIsArray == null) {
 		return item;
 	};
 	if (maximumDepth !== Infinity && advancedDetermine.isNumberPositiveInteger(maximumDepth) == false) {
-		return internalService.typeError(`Invalid type of "maximumDepth"! Require type of positive integer number.`);
+		return internalService.prefabTypeError("maximumDepth", "positive integer number");
 	};
 	return flatInternal(item, maximumDepth);
 };

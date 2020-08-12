@@ -5,6 +5,12 @@
 ==================*/
 const advancedDetermine = require("@hugoalh/advanced-determine");
 const internalService = require("./internalservice.js");
+/**
+ * @private
+ * @function toObjectInternal
+ * @param {*[]} item
+ * @returns {object}
+ */
 function toObjectInternal(item) {
 	let result = {};
 	item.forEach((value, index) => {
@@ -24,7 +30,7 @@ function toObjectInternal(item) {
  */
 function toObject(item) {
 	if (advancedDetermine.isArray(item) == false) {
-		return internalService.typeError(`Invalid type of "item"! Require type of array.`);
+		return internalService.prefabTypeError("item", "array");
 	};
 	return toObjectInternal(item);
 };

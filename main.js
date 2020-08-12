@@ -6,18 +6,14 @@
 /**
  * @const {string} version
  */
-const version = "1.0.11";
+const version = "1.1.0";
 
 const concatenate = require("./concatenate.js");
-const configuration = require("./configuration.js");
 const flatten = require("./flatten.js");
 const removeDuplicate = require("./removeduplicate.js");
 const toObject = require("./toobject.js");
-module.exports.cfg = configuration;
 module.exports.concat = concatenate;
 module.exports.concatenate = concatenate;
-module.exports.config = configuration;
-module.exports.configuration = configuration;
 module.exports.flat = flatten;
 module.exports.flatten = flatten;
 module.exports.merge = concatenate;

@@ -13,19 +13,19 @@ const internalService = require("./internalservice.js");
  */
 function reverse(item) {
 	if (advancedDetermine.isArray(item) == false) {
-		return internalService.typeError(`Invalid type of "item"! Require type of array.`);
+		return internalService.prefabTypeError("item", "array");
 	};
 	if (item.length <= 1) {
 		return item;
 	};
-	let resultJSON = {};
+	let resultObject = {};
 	Promise.allSettled(
 		item.map((element, index) => {
 			new Promise(() => {
-				resultJSON[(item.length - 1) - index] = element;
+				resultObject[(item.length - 1) - index] = element;
 			}).catch();
 		})
 	);
-	return Object.values(resultJSON);
+	return Object.values(resultObject);
 };
 module.exports = reverse;
