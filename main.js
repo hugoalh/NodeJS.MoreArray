@@ -6,7 +6,7 @@
 /**
  * @const {string} version
  */
-const version = "1.1.0";
+const version = "1.1.1";
 
 const concatenate = require("./concatenate.js");
 const flatten = require("./flatten.js");

@@ -10,7 +10,7 @@ const internalService = require("./internalservice.js");
  * @function flatInternal
  * @param {*[]} item
  * @param {number} maximumDepth
- * @param {number} currentDepth
+ * @param {number} [currentDepth=0]
  * @returns {*[]}
  */
 function flatInternal(item, maximumDepth, currentDepth = 0) {

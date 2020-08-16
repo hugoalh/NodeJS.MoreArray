@@ -15,7 +15,7 @@ const internalService = require("./internalservice.js");
  */
 function concatenate(...items) {
 	if (items.length == 0) {
-		throw new Error(`No input of "items"!`);
+		return internalService.prefabNoInputError("items");
 	};
 	items.forEach((item, index) => {
 		if (advancedDetermine.isArray(item) == false) {
