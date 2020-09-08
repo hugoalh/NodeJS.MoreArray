@@ -14,10 +14,10 @@ const internalService = require("./internalservice.js");
 function reverse(item) {
 	if (advancedDetermine.isArray(item) == false) {
 		return internalService.prefabTypeError("item", "array");
-	};
+	}
 	if (item.length <= 1) {
 		return item;
-	};
+	}
 	let resultObject = {};
 	Promise.allSettled(
 		item.map((element, index) => {
@@ -27,5 +27,5 @@ function reverse(item) {
 		})
 	);
 	return Object.values(resultObject);
-};
+}
 module.exports = reverse;

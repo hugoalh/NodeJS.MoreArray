@@ -16,7 +16,7 @@ const internalService = require("./internalservice.js");
 function flatInternal(item, maximumDepth, currentDepth = 0) {
 	if (currentDepth >= maximumDepth) {
 		return item;
-	};
+	}
 	let result = [];
 	for (let index = 0; index < item.length; index++) {
 		if (advancedDetermine.isArray(item[index]) == true) {
@@ -25,10 +25,10 @@ function flatInternal(item, maximumDepth, currentDepth = 0) {
 			);
 		} else {
 			result.push(item[index]);
-		};
-	};
+		}
+	}
 	return result;
-};
+}
 /**
  * @function flatten
  * @alias flat
@@ -41,13 +41,13 @@ function flatten(item, maximumDepth = Infinity) {
 	const itemIsArray = advancedDetermine.isArray(item);
 	if (itemIsArray == false) {
 		return internalService.prefabTypeError("item", "array");
-	};
+	}
 	if (itemIsArray == null) {
 		return item;
-	};
+	}
 	if (maximumDepth !== Infinity && advancedDetermine.isNumberPositiveInteger(maximumDepth) == false) {
 		return internalService.prefabTypeError("maximumDepth", "positive integer number");
-	};
+	}
 	return flatInternal(item, maximumDepth);
-};
+}
 module.exports = flatten;

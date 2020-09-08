@@ -16,16 +16,16 @@ const internalService = require("./internalservice.js");
 function concatenate(...items) {
 	if (items.length == 0) {
 		return internalService.prefabNoInputError("items");
-	};
+	}
 	items.forEach((item, index) => {
 		if (advancedDetermine.isArray(item) == false) {
 			return internalService.prefabTypeError(`item[${index}]`, "array");
-		};
+		}
 	});
 	if (items.length == 1) {
 		return items[0];
-	};
+	}
 	let pool = [];
 	return pool.concat(...items);
-};
+}
 module.exports = concatenate;

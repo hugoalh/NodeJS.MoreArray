@@ -16,17 +16,17 @@ const internalService = require("./internalservice.js");
 function toObjectInternal(item, maximumDepth, currentDepth = 0) {
 	if (currentDepth >= maximumDepth) {
 		return item;
-	};
+	}
 	let result = {};
 	item.forEach((value, index) => {
 		if (advancedDetermine.isArray(value) == true) {
 			result[index] = toObjectInternal(value, maximumDepth, currentDepth + 1);
 		} else {
 			result[index] = value;
-		};
+		}
 	});
 	return result;
-};
+}
 /**
  * @function toObject
  * @description Convert an array to an object.
@@ -37,10 +37,10 @@ function toObjectInternal(item, maximumDepth, currentDepth = 0) {
 function toObject(item, maximumDepth = Infinity) {
 	if (advancedDetermine.isArray(item) == false) {
 		return internalService.prefabTypeError("item", "array");
-	};
+	}
 	if (maximumDepth !== Infinity && advancedDetermine.isNumberPositiveInteger(maximumDepth) == false) {
 		return internalService.prefabTypeError("maximumDepth", "positive integer number");
-	};
+	}
 	return toObjectInternal(item, maximumDepth);
-};
+}
 module.exports = toObject;

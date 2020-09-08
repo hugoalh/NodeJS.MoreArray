@@ -16,18 +16,18 @@ const internalService = require("./internalservice.js");
 function removeDuplicate(item) {
 	if (advancedDetermine.isArray(item) == false) {
 		return internalService.prefabTypeError("item", "array");
-	};
+	}
 	if (item.length <= 1) {
 		return item;
-	};
+	}
 	let queue = item;
 	let result = [];
 	while (queue.length > 0) {
 		const element = queue.shift();
 		if (result.includes(element) == false) {
 			result.push(element);
-		};
-	};
+		}
+	}
 	return result;
-};
+}
 module.exports = removeDuplicate;
