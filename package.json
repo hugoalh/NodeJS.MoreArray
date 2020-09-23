@@ -1,6 +1,6 @@
 {
 	"name": "@hugoalh/more-array",
-	"version": "1.1.2",
+	"version": "1.1.1",
 	"description": "A library/module to provide more ways to handle array.",
 	"keywords": [
 		"nodejs",
