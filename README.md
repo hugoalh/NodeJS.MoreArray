@@ -72,7 +72,7 @@ A NodeJS library/module to provide more ways to handle array.
 
 NodeJS (>= v10) & NPM (>= v6):
 
-```powershell
+```sh
 > npm install @hugoalh/more-array
 ```
 
